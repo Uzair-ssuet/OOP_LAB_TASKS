@@ -8,7 +8,7 @@ public class UzairTasks {
     String studentName = "Uzair";
     String rollNumber = "2023F-BSE-085";
 
-    // Lab Task 1: Swap Arrays
+    // Lab Task 1
     public void swapArrays(int[] array1, int[] array2) {
         for (int i = 0; i < array1.length; i++) {
             int temp = array1[i];
@@ -22,7 +22,7 @@ public class UzairTasks {
         for (int n : array2) System.out.print(n + " ");
     }
 
-    // Lab Task 2: Merge Array
+    // Lab Task 2:
     public int[] mergeArrays(int[] existingArray, int[] newArray) {
         int[] mergedArray = new int[existingArray.length + newArray.length];
         System.arraycopy(existingArray, 0, mergedArray, 0, existingArray.length);
@@ -40,7 +40,7 @@ public class UzairTasks {
         }
     }
 
-    // Lab Task 4: Count Even and Odd
+    // Lab Task 4:
     public void countEvenOdd(int[] numbers) {
         int evenCount = 0, oddCount = 0;
         for (int num : numbers) {
@@ -51,7 +51,7 @@ public class UzairTasks {
         System.out.println("Odd count: " + oddCount);
     }
 
-    // Lab Task 5: Merge and Remove Duplicates
+    // Lab Task 5:
     public int[] mergeAndRemoveDuplicates(int[] array1, int[] array2) {
         int[] mergedArray = new int[array1.length + array2.length];
         System.arraycopy(array1, 0, mergedArray, 0, array1.length);
@@ -67,7 +67,7 @@ public class UzairTasks {
         return resultArray;
     }
 
-    // Home Task 1: Sum and Mean of Real Numbers
+    // Home Task 1:
     public void calculateSumAndMean(double[] realNumbers) {
         double sum = 0;
         for (double num : realNumbers) sum += num;
@@ -77,7 +77,7 @@ public class UzairTasks {
         System.out.println("Memory used by array: " + (realNumbers.length * Double.BYTES) + " bytes");
     }
 
-    // Home Task 2: Split Array by Key
+    // Home Task 2:
     public void splitArrayByKey(int[] mainArray, int key) {
         int index = -1;
         for (int i = 0; i < mainArray.length; i++) {
@@ -100,7 +100,7 @@ public class UzairTasks {
         for (int n : secondHalf) System.out.print(n + " ");
     }
 
-    // Home Task 3: Unique Combinations for Target Sum
+    // Home Task 3:
     public List<List<Integer>> findCombinations(int[] nums, int target) {
         Arrays.sort(nums);
         List<List<Integer>> result = new ArrayList<>();
@@ -120,7 +120,7 @@ public class UzairTasks {
         }
     }
 
-    // Home Task 4: Find Missing Number
+    // Home Task 4:
     public int findMissingNumber(int[] nums) {
         int n = nums.length;
         int expectedSum = n * (n + 1) / 2;
@@ -129,7 +129,7 @@ public class UzairTasks {
         return expectedSum - actualSum;
     }
 
-    // Home Task 5: Sort in Zigzag Pattern
+    // Home Task 5:
     public void zigzagSort(int[] arr) {
         Arrays.sort(arr);
         for (int i = 1; i < arr.length - 1; i += 2) {
@@ -144,7 +144,6 @@ public class UzairTasks {
     public static void main(String[] args) {
         UzairTasks tasks = new UzairTasks();
         
-        // Example calls
         tasks.swapArrays(new int[]{1, 2, 3, 4}, new int[]{5, 6, 7, 8});
         tasks.calculateSumAndMean(new double[]{5.5, 2.3, 8.1, 4.4, 3.3, 7.2, 6.6});
         tasks.splitArrayByKey(new int[]{1, 3, 5, 7, 9, 11, 13}, 7);
